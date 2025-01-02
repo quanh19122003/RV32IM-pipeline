@@ -1,0 +1,7 @@
+Warning (10268): Verilog HDL information at lsu.sv(121): always construct contains both blocking and non-blocking assignments
+Info (10281): Verilog HDL Declaration information at alu.sv(18): object "MUL" differs only in case from object "mul" in the same scope
+Info (10281): Verilog HDL Declaration information at alu.sv(19): object "MULH" differs only in case from object "mulh" in the same scope
+Info (10281): Verilog HDL Declaration information at alu.sv(20): object "MULHU" differs only in case from object "mulhu" in the same scope
+Info (10281): Verilog HDL Declaration information at alu.sv(21): object "MULHSU" differs only in case from object "mulhsu" in the same scope
+Info (10281): Verilog HDL Declaration information at alu.sv(22): object "DIVU" differs only in case from object "divu" in the same scope
+Info (10281): Verilog HDL Declaration information at alu.sv(24): object "DIV" differs only in case from object "div" in the same scope

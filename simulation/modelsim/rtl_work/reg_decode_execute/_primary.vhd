@@ -1,0 +1,43 @@
+library verilog;
+use verilog.vl_types.all;
+entity reg_decode_execute is
+    port(
+        mem_wrenD       : in     vl_logic;
+        op_a_selD       : in     vl_logic;
+        op_b_selD       : in     vl_logic;
+        rd_wrenD        : in     vl_logic;
+        br_selD         : in     vl_logic;
+        wb_selD         : in     vl_logic_vector(1 downto 0);
+        ld_selD         : in     vl_logic_vector(2 downto 0);
+        byte_enD        : in     vl_logic_vector(3 downto 0);
+        rs1_addrD       : in     vl_logic_vector(4 downto 0);
+        rs2_addrD       : in     vl_logic_vector(4 downto 0);
+        rd_addrD        : in     vl_logic_vector(4 downto 0);
+        alu_opD         : in     vl_logic_vector(4 downto 0);
+        pcD             : in     vl_logic_vector(12 downto 0);
+        pc4D            : in     vl_logic_vector(12 downto 0);
+        immD            : in     vl_logic_vector(31 downto 0);
+        rs1_dataD       : in     vl_logic_vector(31 downto 0);
+        rs2_dataD       : in     vl_logic_vector(31 downto 0);
+        clk             : in     vl_logic;
+        sclr            : in     vl_logic;
+        aclr            : in     vl_logic;
+        mem_wrenE       : out    vl_logic;
+        op_a_selE       : out    vl_logic;
+        op_b_selE       : out    vl_logic;
+        rd_wrenE        : out    vl_logic;
+        br_selE         : out    vl_logic;
+        wb_selE         : out    vl_logic_vector(1 downto 0);
+        ld_selE         : out    vl_logic_vector(2 downto 0);
+        byte_enE        : out    vl_logic_vector(3 downto 0);
+        rs1_addrE       : out    vl_logic_vector(4 downto 0);
+        rs2_addrE       : out    vl_logic_vector(4 downto 0);
+        rd_addrE        : out    vl_logic_vector(4 downto 0);
+        alu_opE         : out    vl_logic_vector(4 downto 0);
+        pcE             : out    vl_logic_vector(12 downto 0);
+        pc4E            : out    vl_logic_vector(12 downto 0);
+        immE            : out    vl_logic_vector(31 downto 0);
+        rs1_dataE       : out    vl_logic_vector(31 downto 0);
+        rs2_dataE       : out    vl_logic_vector(31 downto 0)
+    );
+end reg_decode_execute;

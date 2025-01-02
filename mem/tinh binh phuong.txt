@@ -1,0 +1,181 @@
+# Máy tính khoa học đơn giản
+# Input: 
+# - SW[7:0]: số thứ nhất
+# - SW[15:8]: số thứ hai
+# - SW[17:16]: chọn phép tính
+#   00: Tính bình phương số thứ nhất
+#   01: Tính tích 2 số
+#   10: Chia số thứ nhất cho số thứ hai
+#   11: Tính trung bình cộng
+# Output:
+# - HEX0-3: Hiển thị kết quả dạng thập phân
+# - LEDG: Sáng khi phép tính hợp lệ
+# - LEDR: Sáng khi có lỗi (ví dụ chia cho 0)
+
+.global _start
+.text
+
+_start:
+    # Khởi tạo địa chỉ ngoại vi
+    addi x10, x0, -2048   # HEX0 
+    addi x11, x0, -2032   # HEX1
+    addi x12, x0, -2016   # HEX2 
+    addi x13, x0, -2000   # HEX3
+    addi x18, x0, -1920   # LEDR
+    addi x19, x0, -1904   # LEDG
+    addi x21, x0, -1792   # SW
+
+main_loop:
+    # Đọc giá trị từ SW
+    lw x5, 0(x21)         # Đọc toàn bộ SW
+
+    # Tách các thành phần
+    andi x6, x5, 0xFF     # Số thứ nhất (SW[7:0])
+    srli x7, x5, 8        # Dịch phải 8 bit
+    andi x7, x7, 0xFF     # Số thứ hai (SW[15:8])
+    srli x8, x5, 16       # Dịch phải 16 bit
+    andi x8, x8, 0x3      # Loại phép tính (SW[17:16])
+
+    # Tắt tất cả LED
+    sw x0, 0(x18)         # Tắt LEDR
+    sw x0, 0(x19)         # Tắt LEDG
+
+    # Kiểm tra loại phép tính
+    beqz x8, calc_square      # 00: Bình phương
+    addi t0, x0, 1
+    beq x8, t0, calc_multiply # 01: Nhân
+    addi t0, x0, 2
+    beq x8, t0, calc_divide   # 10: Chia
+    j calc_average            # 11: Trung bình
+
+calc_square:
+    # Tính bình phương số thứ nhất
+    mul x9, x6, x6
+    j display_result
+
+calc_multiply:
+    # Tính tích hai số
+    mul x9, x6, x7
+    j display_result
+
+calc_divide:
+    # Kiểm tra chia cho 0
+    beqz x7, division_error
+    # Thực hiện phép chia
+    div x9, x6, x7
+    j display_result
+
+calc_average:
+    # Tính trung bình
+    add x9, x6, x7
+    addi t0, x0, 2
+    div x9, x9, t0
+    j display_result
+
+division_error:
+    # Hiển thị lỗi
+    addi t0, x0, 1
+    sw t0, 0(x18)         # Bật LEDR
+    li x9, 9999           # Hiển thị 9999 để báo lỗi
+    j display_result
+
+display_result:
+    # Bật đèn xanh báo thành công (trừ khi có lỗi)
+    lw t0, 0(x18)         # Kiểm tra LEDR
+    beqz t0, set_green    # Nếu không có lỗi, bật đèn xanh
+    j convert_digits
+
+set_green:
+    addi t0, x0, 1
+    sw t0, 0(x19)         # Bật LEDG
+
+convert_digits:
+    # Chuyển số thành các chữ số riêng lẻ
+    # và hiển thị lên HEX0-3
+    
+    # Lấy chữ số hàng đơn vị
+    addi t0, x0, 10
+    rem t1, x9, t0        # t1 = x9 % 10
+    div x9, x9, t0        # x9 = x9 / 10
+    mv a0, t1
+    jal ra, hex_pattern
+    sw a0, 0(x10)         # HEX0
+
+    # Lấy chữ số hàng chục
+    rem t1, x9, t0
+    div x9, x9, t0
+    mv a0, t1
+    jal ra, hex_pattern
+    sw a0, 0(x11)         # HEX1
+
+    # Lấy chữ số hàng trăm
+    rem t1, x9, t0
+    div x9, x9, t0
+    mv a0, t1
+    jal ra, hex_pattern
+    sw a0, 0(x12)         # HEX2
+
+    # Lấy chữ số hàng nghìn
+    rem t1, x9, t0
+    mv a0, t1
+    jal ra, hex_pattern
+    sw a0, 0(x13)         # HEX3
+
+    j main_loop
+
+# Hàm chuyển đổi số thành mã LED 7-đoạn
+hex_pattern:
+    # Input trong a0 (0-9)
+    # Output trong a0 (mã LED 7-đoạn)
+    addi sp, sp, -4
+    sw ra, 0(sp)
+    
+    # Bảng mã LED 7-đoạn cho số thập phân
+    li t0, 0x40   # 0
+    li t1, 0x79   # 1
+    li t2, 0x24   # 2
+    li t3, 0x30   # 3
+    li t4, 0x19   # 4
+    li t5, 0x12   # 5
+    li t6, 0x02   # 6
+    
+    # Kiểm tra và trả về mã tương ứng
+    beqz a0, ret_0
+    addi t6, x0, 1
+    beq a0, t6, ret_1
+    addi t6, x0, 2
+    beq a0, t6, ret_2
+    addi t6, x0, 3
+    beq a0, t6, ret_3
+    addi t6, x0, 4
+    beq a0, t6, ret_4
+    addi t6, x0, 5
+    beq a0, t6, ret_5
+    addi t6, x0, 6
+    beq a0, t6, ret_6
+    addi t6, x0, 7
+    beq a0, t6, ret_7
+    addi t6, x0, 8
+    beq a0, t6, ret_8
+    addi t6, x0, 9
+    beq a0, t6, ret_9
+    
+    # Mặc định trả về tắt hết
+    li a0, 0xFF
+    j hex_pattern_end
+    
+ret_0: mv a0, t0; j hex_pattern_end
+ret_1: mv a0, t1; j hex_pattern_end
+ret_2: mv a0, t2; j hex_pattern_end
+ret_3: mv a0, t3; j hex_pattern_end
+ret_4: mv a0, t4; j hex_pattern_end
+ret_5: mv a0, t5; j hex_pattern_end
+ret_6: mv a0, t6; j hex_pattern_end
+ret_7: li a0, 0x03; j hex_pattern_end  # 7
+ret_8: li a0, 0x00; j hex_pattern_end  # 8
+ret_9: li a0, 0x10; j hex_pattern_end  # 9
+
+hex_pattern_end:
+    lw ra, 0(sp)
+    addi sp, sp, 4
+    ret

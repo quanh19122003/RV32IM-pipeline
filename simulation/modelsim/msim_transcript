@@ -1,0 +1,406 @@
+# Reading D:/quartus/modelsim_ase/tcl/vsim/pref.tcl 
+# do pipeline_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\quartus\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\quartus\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -sv -work work +incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src {C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/datamem.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module datamem
+# 
+# Top level modules:
+# 	datamem
+# vlog -sv -work work +incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src {C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/outmem.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module outmem
+# 
+# Top level modules:
+# 	outmem
+# vlog -sv -work work +incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src {C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/inmem.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module inmem
+# 
+# Top level modules:
+# 	inmem
+# vlog -sv -work work +incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src {C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/instr_rom.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module instr_rom
+# 
+# Top level modules:
+# 	instr_rom
+# vlog -sv -work work +incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored {C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/signed_non_restoring_div.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module signed_non_restoring_div
+# 
+# Top level modules:
+# 	signed_non_restoring_div
+# vlog -sv -work work +incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored {C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/non_restoring_div.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module non_restoring_div
+# 
+# Top level modules:
+# 	non_restoring_div
+# vlog -sv -work work +incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src {C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/reg_fetch_decode.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module reg_fetch_decode
+# 
+# Top level modules:
+# 	reg_fetch_decode
+# vlog -sv -work work +incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src {C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/reg_decode_execute.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module reg_decode_execute
+# 
+# Top level modules:
+# 	reg_decode_execute
+# vlog -sv -work work +incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src {C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/reg_execute_memory.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module reg_execute_memory
+# 
+# Top level modules:
+# 	reg_execute_memory
+# vlog -sv -work work +incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src {C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/reg_memory_writeback.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module reg_memory_writeback
+# 
+# Top level modules:
+# 	reg_memory_writeback
+# vlog -sv -work work +incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src {C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/forward1mux.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module forward1mux
+# 
+# Top level modules:
+# 	forward1mux
+# vlog -sv -work work +incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src {C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/forward2mux.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module forward2mux
+# 
+# Top level modules:
+# 	forward2mux
+# vlog -sv -work work +incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src {C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/rs1d_mux.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module rs1d_mux
+# 
+# Top level modules:
+# 	rs1d_mux
+# vlog -sv -work work +incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src {C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/rs2d_mux.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module rs2d_mux
+# 
+# Top level modules:
+# 	rs2d_mux
+# vlog -sv -work work +incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src {C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/hazard_unit.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module hazard_unit
+# 
+# Top level modules:
+# 	hazard_unit
+# vlog -sv -work work +incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src {C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/wb_mux.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module wb_mux
+# 
+# Top level modules:
+# 	wb_mux
+# vlog -sv -work work +incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src {C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/pipeline.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pipeline
+# 
+# Top level modules:
+# 	pipeline
+# vlog -sv -work work +incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src {C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/regfile.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module regfile
+# 
+# Top level modules:
+# 	regfile
+# vlog -sv -work work +incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src {C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/reg_dec.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module reg_dec
+# 
+# Top level modules:
+# 	reg_dec
+# vlog -sv -work work +incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src {C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/pc_reg.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pc_reg
+# 
+# Top level modules:
+# 	pc_reg
+# vlog -sv -work work +incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src {C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/op_b_mux.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module op_b_mux
+# 
+# Top level modules:
+# 	op_b_mux
+# vlog -sv -work work +incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src {C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/op_a_mux.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module op_a_mux
+# 
+# Top level modules:
+# 	op_a_mux
+# vlog -sv -work work +incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src {C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/lsu.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module lsu
+# -- Compiling module addr_dec
+# -- Compiling module ld_mux
+# -- Compiling module latch32_cp
+# -- Compiling module reg32_cp
+# -- Compiling module ld_sel_mux
+# 
+# Top level modules:
+# 	lsu
+# vlog -sv -work work +incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src {C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/immGen.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module immGen
+# 
+# Top level modules:
+# 	immGen
+# vlog -sv -work work +incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src {C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/ctrl_unit.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ctrl_unit
+# 
+# Top level modules:
+# 	ctrl_unit
+# vlog -sv -work work +incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src {C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/brcomp.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module brcomp
+# 
+# Top level modules:
+# 	brcomp
+# vlog -sv -work work +incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src {C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/br_mux.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module br_mux
+# 
+# Top level modules:
+# 	br_mux
+# vlog -sv -work work +incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src {C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/alu.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module alu
+# -- Compiling module arith_right_shift
+# 
+# Top level modules:
+# 	alu
+# vlog -sv -work work +incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src {C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/add4.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module add4
+# 
+# Top level modules:
+# 	add4
+# vlog -sv -work work +incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main {C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main/vedic_mult_32bit.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module vedic_mult_32bit
+# 
+# Top level modules:
+# 	vedic_mult_32bit
+# vlog -sv -work work +incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main {C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main/vedic_mult_16bit.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module vedic_mult_16bit
+# 
+# Top level modules:
+# 	vedic_mult_16bit
+# vlog -sv -work work +incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main {C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main/vedic_mult_8bit.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module vedic_mult_8bit
+# 
+# Top level modules:
+# 	vedic_mult_8bit
+# vlog -sv -work work +incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main {C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main/vedic_mult_4bit.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module vedic_mult_4bit
+# 
+# Top level modules:
+# 	vedic_mult_4bit
+# vlog -sv -work work +incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main {C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main/vedic_mult_2bit.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module vedic_mult_2bit
+# 
+# Top level modules:
+# 	vedic_mult_2bit
+# vlog -sv -work work +incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main {C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main/twos_comp_64bit.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module twos_comp_64bit
+# 
+# Top level modules:
+# 	twos_comp_64bit
+# vlog -sv -work work +incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main {C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main/signed_vedic_mult_32bit.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module signed_vedic_mult_32bit
+# 
+# Top level modules:
+# 	signed_vedic_mult_32bit
+# vlog -sv -work work +incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main {C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main/half_adder.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module half_adder
+# 
+# Top level modules:
+# 	half_adder
+# vlog -sv -work work +incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main {C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main/CLA_32bit.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CLA_32bit
+# 
+# Top level modules:
+# 	CLA_32bit
+# vlog -sv -work work +incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main {C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main/CLA_16bit.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CLA_16bit
+# 
+# Top level modules:
+# 	CLA_16bit
+# vlog -sv -work work +incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main {C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main/CLA_8bit.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CLA_8bit
+# 
+# Top level modules:
+# 	CLA_8bit
+# vlog -sv -work work +incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main {C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main/CLA_4bit.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CLA_4bit
+# 
+# Top level modules:
+# 	CLA_4bit
+# vlog -sv -work work +incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main {C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main/2sComp.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module twos_comp_32bit
+# 
+# Top level modules:
+# 	twos_comp_32bit
+# 
+# vlog -sv -work work +incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/../../../../../../Desktop/singlecycle-test/01_bench {C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/../../../../../../Desktop/singlecycle-test/01_bench/tbench.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tbench
+# 
+# Top level modules:
+# 	tbench
+# vlog -sv -work work +incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/../../../../../../Desktop/singlecycle-test/01_bench {C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/../../../../../../Desktop/singlecycle-test/01_bench/scoreboard.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module scoreboard
+# 
+# Top level modules:
+# 	scoreboard
+# vlog -sv -work work +incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/../../../../../../Desktop/singlecycle-test/01_bench {C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/../../../../../../Desktop/singlecycle-test/01_bench/driver.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module driver
+# 
+# Top level modules:
+# 	driver
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs="+acc"  tbench
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps tbench 
+# Loading sv_std.std
+# Loading work.tbench
+# Loading work.driver
+# Loading work.pipeline
+# Loading work.br_mux
+# Loading work.pc_reg
+# Loading work.add4
+# Loading work.instr_rom
+# Loading work.reg_fetch_decode
+# Loading work.reg_dec
+# Loading work.immGen
+# Loading work.brcomp
+# Loading work.ctrl_unit
+# Loading work.regfile
+# Loading work.rs1d_mux
+# Loading work.rs2d_mux
+# Loading work.reg_decode_execute
+# Loading work.forward1mux
+# Loading work.forward2mux
+# Loading work.op_a_mux
+# Loading work.op_b_mux
+# Loading work.alu
+# Loading work.arith_right_shift
+# Loading work.signed_vedic_mult_32bit
+# Loading work.twos_comp_32bit
+# Loading work.vedic_mult_32bit
+# Loading work.vedic_mult_16bit
+# Loading work.vedic_mult_8bit
+# Loading work.vedic_mult_4bit
+# Loading work.vedic_mult_2bit
+# Loading work.half_adder
+# Loading work.CLA_4bit
+# Loading work.CLA_8bit
+# Loading work.CLA_16bit
+# Loading work.CLA_32bit
+# Loading work.twos_comp_64bit
+# Loading work.non_restoring_div
+# Loading work.signed_non_restoring_div
+# Loading work.reg_execute_memory
+# Loading work.lsu
+# Loading work.addr_dec
+# Loading work.latch32_cp
+# Loading work.datamem
+# Loading altera_mf_ver.altsyncram
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# Loading work.outmem
+# Loading work.inmem
+# Loading work.reg32_cp
+# Loading work.ld_mux
+# Loading work.ld_sel_mux
+# Loading work.reg_memory_writeback
+# Loading work.wb_mux
+# Loading work.hazard_unit
+# Loading work.scoreboard
+# ** Warning: (vsim-3015) C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/../../../../../../Desktop/singlecycle-test/01_bench/tbench.sv(59): [PCDPC] - Port size (32 or 32) does not match connection size (7) for port 'io_hex0_o'. The port definition is at: C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/pipeline.sv(7).
+# 
+#         Region: /tbench/pipeline
+# ** Warning: (vsim-3015) C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/../../../../../../Desktop/singlecycle-test/01_bench/tbench.sv(59): [PCDPC] - Port size (32 or 32) does not match connection size (7) for port 'io_hex1_o'. The port definition is at: C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/pipeline.sv(7).
+# 
+#         Region: /tbench/pipeline
+# ** Warning: (vsim-3015) C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/../../../../../../Desktop/singlecycle-test/01_bench/tbench.sv(59): [PCDPC] - Port size (32 or 32) does not match connection size (7) for port 'io_hex2_o'. The port definition is at: C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/pipeline.sv(7).
+# 
+#         Region: /tbench/pipeline
+# ** Warning: (vsim-3015) C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/../../../../../../Desktop/singlecycle-test/01_bench/tbench.sv(59): [PCDPC] - Port size (32 or 32) does not match connection size (7) for port 'io_hex3_o'. The port definition is at: C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/pipeline.sv(7).
+# 
+#         Region: /tbench/pipeline
+# ** Warning: (vsim-3015) C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/../../../../../../Desktop/singlecycle-test/01_bench/tbench.sv(59): [PCDPC] - Port size (32 or 32) does not match connection size (7) for port 'io_hex4_o'. The port definition is at: C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/pipeline.sv(7).
+# 
+#         Region: /tbench/pipeline
+# ** Warning: (vsim-3015) C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/../../../../../../Desktop/singlecycle-test/01_bench/tbench.sv(59): [PCDPC] - Port size (32 or 32) does not match connection size (7) for port 'io_hex5_o'. The port definition is at: C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/pipeline.sv(7).
+# 
+#         Region: /tbench/pipeline
+# ** Warning: (vsim-3015) C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/../../../../../../Desktop/singlecycle-test/01_bench/tbench.sv(59): [PCDPC] - Port size (32 or 32) does not match connection size (7) for port 'io_hex6_o'. The port definition is at: C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/pipeline.sv(7).
+# 
+#         Region: /tbench/pipeline
+# ** Warning: (vsim-3015) C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/../../../../../../Desktop/singlecycle-test/01_bench/tbench.sv(59): [PCDPC] - Port size (32 or 32) does not match connection size (7) for port 'io_hex7_o'. The port definition is at: C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/pipeline.sv(8).
+# 
+#         Region: /tbench/pipeline
+# ** Warning: (vsim-3015) C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/lsu.sv(29): [PCDPC] - Port size (9 or 9) does not match connection size (6) for port 'address'. The port definition is at: C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/outmem.v(40).
+# 
+#         Region: /tbench/pipeline/dmem/omem
+# ** Warning: (vsim-3015) C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/lsu.sv(30): [PCDPC] - Port size (9 or 9) does not match connection size (6) for port 'address'. The port definition is at: C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/inmem.v(40).
+# 
+#         Region: /tbench/pipeline/dmem/imem
+# ** Warning: (vsim-3015) C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/pipeline.sv(251): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'wb_selE'. The port definition is at: C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/hazard_unit.sv(3).
+# 
+#         Region: /tbench/pipeline/hu
+# ** Warning: (vsim-3015) C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/pipeline.sv(251): [PCDPC] - Port size (2 or 2) does not match connection size (1) for port 'wb_selM'. The port definition is at: C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/hazard_unit.sv(3).
+# 
+#         Region: /tbench/pipeline/hu
+# ** Warning: Design size of 51 instances exceeds ModelSim ALTERA recommended capacity.
+# This may because you are loading cell libraries which are not recommended with
+# the ModelSim Altera version. Expect performance to be adversely affected.
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# TEST for SINGLECYCLE
+# [      160]:: 1::ADD...............
+# Timeout...
+# 
+# DUT is considered	P A S S E D
+# 
+# ** Note: $finish    : C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/../../../../../../Desktop/singlecycle-test/01_bench/tbench.sv(100)
+#    Time: 50 ns  Iteration: 0  Instance: /tbench
+# 1
+# Break in Task tsk_timeout at C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/../../../../../../Desktop/singlecycle-test/01_bench/tbench.sv line 100
+# Simulation Breakpoint: 1
+# Break in Task tsk_timeout at C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/../../../../../../Desktop/singlecycle-test/01_bench/tbench.sv line 100
+# MACRO ./pipeline_run_msim_rtl_verilog.do PAUSED at line 60

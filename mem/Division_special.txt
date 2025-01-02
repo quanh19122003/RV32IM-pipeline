@@ -1,0 +1,41 @@
+# Test all RV32I and M-extension instructions
+# Results will be displayed on peripherals
+
+addi x10, x0,  -2048  
+addi x11, x0,  -2032   
+addi x12, x0,  -2016   
+addi x13, x0,  -2000   
+addi x14, x0,  -1984   
+addi x15, x0,  -1968   
+addi x16, x0,  -1952   
+addi x17, x0,  -1936   
+addi x18, x0,  -1920   
+addi x19, x0,  -1904   
+addi x20, x0,  -1888   
+addi x21, x0,  -1792   
+# Test all RV32I and M-extension instructions
+
+main:
+    # Initialize test values
+    li x1, -2147483648   # First operand
+    li x2,  -1   # Second operand
+    div x3, x1, x2     # Kết quả sẽ là -2^31
+    rem x4, x1, x2     # Kết quả sẽ là 0
+    # Test M-extension multiplication
+    # Store multiplication results
+    sw x3, 0(x10)        # HEX0: mul result
+    sw x4, 0(x11)        # HEX1: mulh result
+    
+    li x5, 42          # Số bị chia
+    li x6, 0           # Số chia
+    div x7, x5, x6     # Signed div by 0  
+    rem x8, x5, x6     # Signed rem by 0
+    divu x9, x5, x6    # Unsigned div by 0
+    remu x22, x5, x6    # Unsigned rem by 0
+    # Test M-extension division
+    sw x7, 0(x12)        # HEX0: mul result
+    sw x8, 0(x13)        # HEX1: mulh result
+    sw x9, 0(x14)        # HEX0: mul result
+    sw x22, 0(x15)        # HEX1: mulh result
+infinite_loop:
+    j infinite_loop

@@ -1,0 +1,5 @@
+add x4, x3, x2
+lw x5, 0x40(x1)
+sub x9, x5, x1 # 1 NOP
+or x2, x7, x5
+sll x4, x5, x1

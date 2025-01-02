@@ -1,0 +1,260 @@
+# Hệ thống điều khiển PID động cơ
+# Input:
+# - SW[7:0]: Setpoint (tốc độ mong muốn)
+# - SW[15:8]: Kp (hệ số tỷ lệ) 
+# - SW[17:16]: Chọn chế độ:
+#   00: Chỉ điều khiển P
+#   01: Điều khiển PI
+#   10: Điều khiển PID
+#   11: Chế độ diagnostic
+# Output:
+# - HEX0-1: Hiển thị tốc độ hiện tại
+# - HEX2-3: Hiển thị setpoint
+# - HEX4-5: Hiển thị error
+# - LEDG: Báo hệ thống hoạt động ổn định
+# - LEDR: Báo lỗi/quá tốc độ
+
+.global _start
+.text
+
+# Các hằng số
+.equ MAX_SPEED, 100
+.equ MIN_SPEED, 0
+.equ SAMPLE_TIME, 100    # 100ms
+.equ KI_DEFAULT, 5       # Hệ số tích phân mặc định
+.equ KD_DEFAULT, 2       # Hệ số đạo hàm mặc định
+
+_start:
+    # Khởi tạo địa chỉ ngoại vi
+    addi x10, x0, -2048   # HEX0 
+    addi x11, x0, -2032   # HEX1
+    addi x12, x0, -2016   # HEX2 
+    addi x13, x0, -2000   # HEX3
+    addi x14, x0, -1984   # HEX4
+    addi x15, x0, -1968   # HEX5
+    addi x18, x0, -1920   # LEDR
+    addi x19, x0, -1904   # LEDG
+    addi x21, x0, -1792   # SW
+
+    # Khởi tạo các biến PID
+    mv s0, x0            # Tổng error (cho I)
+    mv s1, x0            # Error trước đó (cho D)
+    mv s2, x0            # Output trước đó
+
+main_loop:
+    # Đọc input
+    lw x5, 0(x21)        # Đọc SW
+    
+    # Tách thành phần
+    andi x6, x5, 0xFF    # Setpoint
+    srli x7, x5, 8       # Dịch phải 8 bit
+    andi x7, x7, 0xFF    # Kp
+    srli x8, x5, 16      # Dịch phải 16 bit
+    andi x8, x8, 0x3     # Chế độ điều khiển
+
+    # Đọc tốc độ hiện tại (giả lập)
+    # Trong thực tế, đây sẽ là đọc từ encoder
+    mv a0, s2            # Lấy output trước đó làm feedback
+    jal ra, simulate_motor_speed
+    mv t0, a0            # t0 = tốc độ hiện tại
+
+    # Tính error
+    sub t1, x6, t0       # error = setpoint - current_speed
+    
+    # Tính thành phần P
+    mul t2, t1, x7       # P = error * Kp
+    
+    # Xử lý theo chế độ điều khiển
+    beqz x8, p_control     # 00: Chỉ P
+    addi t3, x0, 1
+    beq x8, t3, pi_control # 01: PI
+    addi t3, x0, 2
+    beq x8, t3, pid_control # 10: PID
+    j diagnostic_mode      # 11: Diagnostic
+
+p_control:
+    mv t4, t2            # output = P
+    j apply_output
+
+pi_control:
+    # Cập nhật tổng error
+    add s0, s0, t1       # sum_error += error
+    
+    # Tính thành phần I
+    li t3, KI_DEFAULT
+    mul t3, s0, t3       # I = Ki * sum_error
+    
+    # Tính output
+    add t4, t2, t3       # output = P + I
+    j apply_output
+
+pid_control:
+    # Cập nhật tổng error
+    add s0, s0, t1       # sum_error += error
+    
+    # Tính thành phần I
+    li t3, KI_DEFAULT
+    mul t3, s0, t3       # I = Ki * sum_error
+    
+    # Tính thành phần D
+    sub t5, t1, s1       # error_diff = error - prev_error
+    li t6, KD_DEFAULT
+    mul t5, t5, t6       # D = Kd * error_diff
+    
+    # Tính output
+    add t4, t2, t3       # output = P + I
+    add t4, t4, t5       # output += D
+    
+    # Lưu error hiện tại
+    mv s1, t1            # prev_error = error
+    j apply_output
+
+diagnostic_mode:
+    # Hiển thị các thông số
+    mv t4, t2            # Hiển thị thành phần P
+    
+    # Hiển thị thêm thông tin debug
+    mv a0, x7            # Hiển thị Kp
+    jal ra, display_hex
+    sw a0, 0(x14)        # HEX4
+    
+    mv a0, t1            # Hiển thị error
+    jal ra, display_hex
+    sw a0, 0(x15)        # HEX5
+    j end_loop
+
+apply_output:
+    # Giới hạn output
+    li t5, MAX_SPEED
+    bgt t4, t5, limit_max
+    li t5, MIN_SPEED
+    blt t4, t5, limit_min
+    j apply_limits_done
+
+limit_max:
+    li t4, MAX_SPEED
+    j apply_limits_done
+
+limit_min:
+    li t4, MIN_SPEED
+
+apply_limits_done:
+    # Lưu output
+    mv s2, t4            # Lưu output cho chu kỳ sau
+
+    # Hiển thị kết quả
+    mv a0, t0            # Hiển thị tốc độ hiện tại
+    jal ra, display_hex
+    sw a0, 0(x10)        # HEX0
+    sw x0, 0(x11)        # HEX1
+    
+    mv a0, x6            # Hiển thị setpoint
+    jal ra, display_hex
+    sw a0, 0(x12)        # HEX2
+    sw x0, 0(x13)        # HEX3
+
+    # Kiểm tra ổn định
+    addi t5, x6, -5      # setpoint - 5
+    addi t6, x6, 5       # setpoint + 5
+    blt t0, t5, not_stable
+    bgt t0, t6, not_stable
+    
+    # Hệ thống ổn định
+    addi t5, x0, 1
+    sw t5, 0(x19)        # Bật LEDG
+    sw x0, 0(x18)        # Tắt LEDR
+    j end_loop
+
+not_stable:
+    sw x0, 0(x19)        # Tắt LEDG
+    addi t5, x0, 1
+    sw t5, 0(x18)        # Bật LEDR
+
+end_loop:
+    # Delay để mô phỏng thời gian lấy mẫu
+    li a0, SAMPLE_TIME
+    jal ra, delay
+    j main_loop
+
+# Hàm mô phỏng tốc độ động cơ
+simulate_motor_speed:
+    # Input a0: giá trị điều khiển
+    # Output a0: tốc độ mô phỏng
+    addi sp, sp, -4
+    sw ra, 0(sp)
+    
+    # Mô phỏng đơn giản: tốc độ = 0.9 * giá trị điều khiển
+    li t0, 90
+    mul a0, a0, t0
+    li t0, 100
+    div a0, a0, t0
+    
+    lw ra, 0(sp)
+    addi sp, sp, 4
+    ret
+
+# Hàm delay đơn giản
+delay:
+    # Input a0: số chu kỳ delay
+    addi t0, x0, 0
+delay_loop:
+    addi t0, t0, 1
+    bne t0, a0, delay_loop
+    ret
+
+# Hàm chuyển đổi số thành mã LED 7-đoạn
+display_hex:
+    # Input a0: số cần hiển thị (0-99)
+    # Output a0: mã LED 7-đoạn
+    addi sp, sp, -4
+    sw ra, 0(sp)
+    
+    # Bảng mã LED 7-đoạn
+    li t0, 0x40   # 0
+    li t1, 0x79   # 1
+    li t2, 0x24   # 2
+    li t3, 0x30   # 3
+    li t4, 0x19   # 4
+    li t5, 0x12   # 5
+    li t6, 0x02   # 6
+    
+    # Xử lý số
+    li t6, 10
+    rem a0, a0, t6    # Chỉ lấy chữ số cuối
+    
+    # Chuyển đổi sang mã LED
+    beqz a0, ret_0
+    addi t6, x0, 1
+    beq a0, t6, ret_1
+    addi t6, x0, 2
+    beq a0, t6, ret_2
+    addi t6, x0, 3
+    beq a0, t6, ret_3
+    addi t6, x0, 4
+    beq a0, t6, ret_4
+    addi t6, x0, 5
+    beq a0, t6, ret_5
+    addi t6, x0, 6
+    beq a0, t6, ret_6
+    addi t6, x0, 7
+    beq a0, t6, ret_7
+    addi t6, x0, 8
+    beq a0, t6, ret_8
+    addi t6, x0, 9
+    beq a0, t6, ret_9
+    
+ret_0: mv a0, t0; j display_hex_end
+ret_1: mv a0, t1; j display_hex_end
+ret_2: mv a0, t2; j display_hex_end
+ret_3: mv a0, t3; j display_hex_end
+ret_4: mv a0, t4; j display_hex_end
+ret_5: mv a0, t5; j display_hex_end
+ret_6: mv a0, t6; j display_hex_end
+ret_7: li a0, 0x03; j display_hex_end
+ret_8: li a0, 0x00; j display_hex_end
+ret_9: li a0, 0x10; j display_hex_end
+
+display_hex_end:
+    lw ra, 0(sp)
+    addi sp, sp, 4
+    ret

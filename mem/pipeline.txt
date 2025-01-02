@@ -1,0 +1,5 @@
+add x5, x3, x2 #
+xor x6, x5, x1 # ALU_MEM -> A
+sub x9, x3, x5 # WB -> B
+or x2, x7, x5 #
+sll x4, x5, x5 #

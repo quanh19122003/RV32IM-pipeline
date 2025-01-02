@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="pipeline">
+		<CBX_INST_ENTRY INSTANCE_NAME="|pipeline|lsu:dmem|datamem:dmem|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_7uc1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|pipeline|lsu:dmem|inmem:imem|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_7uc1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|pipeline|lsu:dmem|outmem:omem|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_7uc1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|pipeline|reg_decode_execute:execute|altshift_taps:wb_selE_rtl_0" CBX_FILE_NAME="shift_taps_ofm.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

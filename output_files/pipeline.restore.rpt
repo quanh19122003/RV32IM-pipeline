@@ -1,0 +1,124 @@
+Restore Archived Project report for pipeline
+Sat Dec 28 09:22:43 2024
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Restore Archived Project Summary
+  3. Restore Archived Project Messages
+  4. Files Restored
+  5. Files Not Restored
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------+
+; Restore Archived Project Summary                                        ;
++---------------------------------+---------------------------------------+
+; Restore Archived Project Status ; Successful - Sat Dec 28 09:22:43 2024 ;
+; Revision Name                   ; pipeline                              ;
+; Top-level Entity Name           ; pipeline                              ;
+; Family                          ; Cyclone II                            ;
++---------------------------------+---------------------------------------+
+
+
++-----------------------------------+
+; Restore Archived Project Messages ;
++-----------------------------------+
+Info: Successfully restored 'C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline.qar' into the 'C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/' directory
+Info: Generated report 'pipeline.restore.rpt'
+Info (23030): Evaluation of Tcl script d:/quartus/quartus/common/tcl/apps/qpm/qar.tcl was successful
+Info: Quartus II 64-Bit Shell was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4410 megabytes
+    Info: Processing ended: Sat Dec 28 09:22:43 2024
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
+
+
++---------------------------------------------------------------------------------------------------+
+; Files Restored                                                                                    ;
++---------------------------------------------------------------------------------------------------+
+; File Name                                                                                         ;
++---------------------------------------------------------------------------------------------------+
+; 32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main/2sComp.v                  ;
+; 32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main/CLA_16bit.v               ;
+; 32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main/CLA_32bit.v               ;
+; 32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main/CLA_4bit.v                ;
+; 32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main/CLA_8bit.v                ;
+; 32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main/half_adder.v              ;
+; 32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main/signed_vedic_mult_32bit.v ;
+; 32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main/twos_comp_64bit.v         ;
+; 32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main/vedic_mult_16bit.v        ;
+; 32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main/vedic_mult_2bit.v         ;
+; 32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main/vedic_mult_32bit.v        ;
+; 32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main/vedic_mult_4bit.v         ;
+; 32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main/vedic_mult_8bit.v         ;
+; mem/pipeline_hazard.mem                                                                           ;
+; incremental_db/compiled_partitions/pipeline.db_info                                               ;
+; pipeline.qpf                                                                                      ;
+; pipeline.qsf                                                                                      ;
+; wrapper.sv                                                                                        ;
+; src/add4.sv                                                                                       ;
+; src/alu.sv                                                                                        ;
+; src/br_mux.sv                                                                                     ;
+; src/brcomp.sv                                                                                     ;
+; src/ctrl_unit.sv                                                                                  ;
+; src/datamem.v                                                                                     ;
+; src/forward1mux.sv                                                                                ;
+; src/forward2mux.sv                                                                                ;
+; src/hazard_unit.sv                                                                                ;
+; src/immGen.sv                                                                                     ;
+; src/inmem.v                                                                                       ;
+; src/instr_rom.v                                                                                   ;
+; src/lsu.sv                                                                                        ;
+; src/op_a_mux.sv                                                                                   ;
+; src/op_b_mux.sv                                                                                   ;
+; src/outmem.v                                                                                      ;
+; src/pc_reg.sv                                                                                     ;
+; src/pipeline.sv                                                                                   ;
+; src/reg_dec.sv                                                                                    ;
+; src/reg_decode_execute.sv                                                                         ;
+; src/reg_execute_memory.sv                                                                         ;
+; src/reg_fetch_decode.sv                                                                           ;
+; src/reg_memory_writeback.sv                                                                       ;
+; src/regfile.sv                                                                                    ;
+; src/rs1d_mux.sv                                                                                   ;
+; src/rs2d_mux.sv                                                                                   ;
+; src/wb_mux.sv                                                                                     ;
+; tb/lsu_tb.sv                                                                                      ;
+; tb/pipeline_tb.sv                                                                                 ;
+; UnsignedTestBench.sv                                                                              ;
+; non_restoring_div.sv                                                                              ;
+; signed_non_restoring_div.sv                                                                       ;
+; assignment_defaults.qdf                                                                           ;
++---------------------------------------------------------------------------------------------------+
+
+
++--------------------+
+; Files Not Restored ;
++--------------------+
+; File Name          ;
++--------------------+
+
+

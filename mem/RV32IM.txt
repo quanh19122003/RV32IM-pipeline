@@ -1,0 +1,48 @@
+# Test all RV32I and M-extension instructions
+# Results will be displayed on peripherals
+
+addi x10, x0,  -2048  
+addi x11, x0,  -2032   
+addi x12, x0,  -2016   
+addi x13, x0,  -2000   
+addi x14, x0,  -1984   
+addi x15, x0,  -1968   
+addi x16, x0,  -1952   
+addi x17, x0,  -1936   
+addi x18, x0,  -1920   
+addi x19, x0,  -1904   
+addi x20, x0,  -1888   
+addi x21, x0,  -1792   
+# Test all RV32I and M-extension instructions
+
+main:
+    # Initialize test values
+    li x1, -1234   # First operand
+    li x2,  8765   # Second operand
+    
+    # Test M-extension multiplication
+    mul x3, x1, x2       # Lower 32-bits
+    mulh x4, x1, x2      # Upper 32-bits (signed x signed)
+    mulhu x5, x1, x2     # Upper 32-bits (unsigned x unsigned)
+    mulhsu x6, x1, x2    # Upper 32-bits (signed x unsigned)
+    
+    # Store multiplication results
+    sw x3, 0(x10)        # HEX0: mul result
+    sw x4, 0(x11)        # HEX1: mulh result
+    sw x5, 0(x12)        # HEX2: mulhu result  
+    sw x6, 0(x13)        # HEX3: mulhsu result
+    
+    # Test M-extension division
+    div x7, x1, x2       # Signed division
+    divu x8, x1, x2      # Unsigned division
+    rem x9, x1, x2       # Signed remainder
+    remu x22, x1, x2     # Unsigned remainder
+    
+    # Store division results
+    sw x7, 0(x14)        # HEX4: div result
+    sw x8, 0(x15)        # HEX5: divu result
+    sw x9, 0(x16)        # HEX6: rem result
+    sw x22, 0(x17)       # HEX7: remu result
+
+infinite_loop:
+    j infinite_loop

@@ -1,0 +1,1183 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Admin\Downloads\Compressed\pipeline-main\pipeline-main\quartus\pipeline_restored\simulation\modelsim
+vadd4
+Z1 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+IiV:l0E`P08684kocL^zT>0
+V8U@?eR`SFRFdzLJ^5HTIS0
+S1
+Z2 dC:\Users\Admin\Downloads\Compressed\pipeline-main\pipeline-main\quartus\pipeline_restored\simulation\modelsim
+Z3 w1735352563
+8C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/add4.sv
+FC:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/add4.sv
+L0 1
+Z4 OV;L;10.1d;51
+r1
+31
+Z5 o-sv -work work -O0
+Z6 !s92 -sv -work work +incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src -O0
+!i10b 1
+!s100 m8f>JbmAJACGYkAjKPT>Q0
+!s105 add4_sv_unit
+!s85 0
+!s108 1735532457.147000
+!s107 C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/add4.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src|C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/add4.sv|
+!s101 -O0
+vaddr_dec
+R1
+ICYd]8@fJUzFCKGFeQHPnl1
+VYd8fSOR:J4h`8F30CIMfi2
+Z7 !s105 lsu_sv_unit
+S1
+R2
+R3
+Z8 8C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/lsu.sv
+Z9 FC:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/lsu.sv
+L0 61
+R4
+r1
+31
+Z10 !s108 1735532456.863000
+Z11 !s107 C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/lsu.sv|
+Z12 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src|C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/lsu.sv|
+R5
+R6
+!i10b 1
+!s100 CM@:]`dGPW^?giF9SFaPQ1
+!s85 0
+!s101 -O0
+valu
+R1
+IMVO?bXEoT_zO:2O=eX:kR2
+Vo9hi[;[PDCjeUdNa:CScB1
+Z13 !s105 alu_sv_unit
+S1
+R2
+R3
+Z14 8C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/alu.sv
+Z15 FC:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/alu.sv
+L0 1
+R4
+r1
+31
+Z16 !s108 1735532457.095000
+Z17 !s107 C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/alu.sv|
+Z18 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src|C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/alu.sv|
+R5
+R6
+!i10b 1
+!s100 VDhXP_Gbak81HA5B3d5BM1
+!s85 0
+!s101 -O0
+varith_right_shift
+R1
+IaA9051dhA62fK6X?feRA33
+VjO2JOkI<jZDOT_kcB<U6Y3
+R13
+S1
+R2
+R3
+R14
+R15
+L0 115
+R4
+r1
+31
+R16
+R17
+R18
+R5
+R6
+!i10b 1
+!s100 2kXVG^K<ANEznhaZk`?z82
+!s85 0
+!s101 -O0
+vbr_mux
+R1
+Il_PY3zZd4OH`?S9V<J4Y;0
+V4KcRo2oJk0jZHcNNcT^P22
+S1
+R2
+R3
+8C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/br_mux.sv
+FC:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/br_mux.sv
+L0 1
+R4
+r1
+31
+R5
+R6
+!i10b 1
+!s100 f?eGdb`k<RB<b_1mOJ7`M1
+!s105 br_mux_sv_unit
+!s85 0
+!s108 1735532457.055000
+!s107 C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/br_mux.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src|C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/br_mux.sv|
+!s101 -O0
+vbrcomp
+R1
+IJaU3h;eTN5mFm`OJL5DG@2
+V<6bfJEmUn[g80]I5o7SN62
+S1
+R2
+R3
+8C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/brcomp.sv
+FC:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/brcomp.sv
+L0 1
+R4
+r1
+31
+R5
+R6
+!i10b 1
+!s100 WO:U[ok5[]<6?eSobg_cK2
+!s105 brcomp_sv_unit
+!s85 0
+!s108 1735532457.015000
+!s107 C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/brcomp.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src|C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/brcomp.sv|
+!s101 -O0
+vCLA_16bit
+R1
+IW6OR4Z7e`JVzNVXc_GDTa2
+VGin]e41IHg21^AiOe<KL:1
+S1
+R2
+Z19 w1735293250
+8C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main/CLA_16bit.v
+FC:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main/CLA_16bit.v
+L0 23
+R4
+r1
+31
+R5
+Z20 !s92 -sv -work work +incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main -O0
+n@c@l@a_16bit
+!i10b 1
+!s100 U;e7zcM[OiKSnBTY@bcUH1
+!s105 CLA_16bit_v_unit
+!s85 0
+!s108 1735532457.583000
+!s107 C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main/CLA_16bit.v|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main|C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main/CLA_16bit.v|
+!s101 -O0
+vCLA_32bit
+R1
+IbGNC;Tf?VVjdiom5DKEW92
+Vo`dcX9j_F?Qa7c0CXiKAJ2
+S1
+R2
+w1735293249
+8C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main/CLA_32bit.v
+FC:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main/CLA_32bit.v
+L0 23
+R4
+r1
+31
+R5
+R20
+n@c@l@a_32bit
+!i10b 1
+!s100 ];Ek=`7jk9NZ^i8f9nKWA2
+!s105 CLA_32bit_v_unit
+!s85 0
+!s108 1735532457.538000
+!s107 C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main/CLA_32bit.v|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main|C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main/CLA_32bit.v|
+!s101 -O0
+vCLA_4bit
+R1
+Ic^_TEB`JS=UiiFJeGCkLU1
+V6[X:n12]gL7U4@P39L:zK1
+S1
+R2
+w1735293256
+8C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main/CLA_4bit.v
+FC:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main/CLA_4bit.v
+L0 23
+R4
+r1
+31
+R5
+R20
+n@c@l@a_4bit
+!i10b 1
+!s100 >UQm14eJ9]jl=_GD<^]e72
+!s105 CLA_4bit_v_unit
+!s85 0
+!s108 1735532457.672000
+!s107 C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main/CLA_4bit.v|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main|C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main/CLA_4bit.v|
+!s101 -O0
+vCLA_8bit
+R1
+IcOSV?KBU7gm=3C:hMWcn21
+VT3D`NePZo8l1J<dJ]z35B2
+S1
+R2
+R19
+8C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main/CLA_8bit.v
+FC:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main/CLA_8bit.v
+L0 23
+R4
+r1
+31
+R5
+R20
+n@c@l@a_8bit
+!i10b 1
+!s100 d;ZdRCbbWILOJA3dC0@Fk3
+!s105 CLA_8bit_v_unit
+!s85 0
+!s108 1735532457.628000
+!s107 C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main/CLA_8bit.v|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main|C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main/CLA_8bit.v|
+!s101 -O0
+vctrl_unit
+R1
+I@_fjN4JX]fzDBC<0V3[h62
+VcYi447gETO0FU9i;hR1gA3
+S1
+R2
+R3
+8C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/ctrl_unit.sv
+FC:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/ctrl_unit.sv
+L0 1
+R4
+r1
+31
+R5
+R6
+!i10b 1
+!s100 `Thi?F2T9:oS:>md:X;h91
+!s105 ctrl_unit_sv_unit
+!s85 0
+!s108 1735532456.970000
+!s107 C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/ctrl_unit.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src|C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/ctrl_unit.sv|
+!s101 -O0
+vdatamem
+R1
+IT<WM>[jI7zBQ08j1[kF041
+V2HiK?nal`4zQIDZ2A02aK2
+S1
+R2
+R3
+8C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/datamem.v
+FC:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/datamem.v
+L0 39
+R4
+r1
+31
+R5
+R6
+!i10b 1
+!s100 JU>[`jLY<mj]3iceW<fVT0
+!s105 datamem_v_unit
+!s85 0
+!s108 1735532455.955000
+!s107 C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/datamem.v|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src|C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/datamem.v|
+!s101 -O0
+vdriver
+R1
+!i10b 1
+!s100 o8[>I=6?XBH8@6ZVc?T@<1
+Ib<UKkX9:il9nE@Hn<nY=h3
+Vl`;g5XUoiP^Rf=E=1[[X;3
+!s105 driver_sv_unit
+S1
+R2
+w1735532132
+8C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/../../../../../../Desktop/singlecycle-test/01_bench/driver.sv
+FC:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/../../../../../../Desktop/singlecycle-test/01_bench/driver.sv
+L0 1
+R4
+r1
+!s85 0
+31
+!s108 1735532457.862000
+!s107 C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/../../../../../../Desktop/singlecycle-test/01_bench/driver.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/../../../../../../Desktop/singlecycle-test/01_bench|C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/../../../../../../Desktop/singlecycle-test/01_bench/driver.sv|
+!s101 -O0
+R5
+Z21 !s92 -sv -work work +incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/../../../../../../Desktop/singlecycle-test/01_bench -O0
+vforward1mux
+R1
+I?:N_G3mD<JUL?^6lUfc_R1
+V`0SLi>WJ98MM>D;MRiCZO2
+S1
+R2
+R3
+8C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/forward1mux.sv
+FC:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/forward1mux.sv
+L0 1
+R4
+r1
+31
+R5
+R6
+!i10b 1
+!s100 D]95KT6bQh`jRLV:3kbYn2
+!s105 forward1mux_sv_unit
+!s85 0
+!s108 1735532456.379000
+!s107 C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/forward1mux.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src|C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/forward1mux.sv|
+!s101 -O0
+vforward2mux
+R1
+IZfZ?za;m>cGn8]J2_IcSG2
+VD:^K<JH?Az:ZBlZSi_]A01
+S1
+R2
+R3
+8C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/forward2mux.sv
+FC:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/forward2mux.sv
+L0 1
+R4
+r1
+31
+R5
+R6
+!i10b 1
+!s100 Z^Gbd3>cHFM8BeT8f^KBA0
+!s105 forward2mux_sv_unit
+!s85 0
+!s108 1735532456.416000
+!s107 C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/forward2mux.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src|C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/forward2mux.sv|
+!s101 -O0
+vhalf_adder
+R1
+IIjklUi5]2`2]KbPBYk]^o3
+Vi;]XPD]Q[FDiNj9KhN]e[3
+S1
+R2
+Z22 w1722626843
+8C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main/half_adder.v
+FC:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main/half_adder.v
+L0 23
+R4
+r1
+31
+R5
+R20
+!i10b 1
+!s100 m[>VFdF18dC=28M`d22KX0
+!s105 half_adder_v_unit
+!s85 0
+!s108 1735532457.495000
+!s107 C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main/half_adder.v|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main|C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main/half_adder.v|
+!s101 -O0
+vhazard_unit
+R1
+Ie2W68U1dDVzoi:c<l@Se<0
+VI;CeZ16`cQ=ALS_z1^UKI3
+S1
+R2
+R3
+8C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/hazard_unit.sv
+FC:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/hazard_unit.sv
+L0 1
+R4
+r1
+31
+R5
+R6
+!i10b 1
+!s100 5XISF@QAVQ0>R]moY5`0f3
+!s105 hazard_unit_sv_unit
+!s85 0
+!s108 1735532456.535000
+!s107 C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/hazard_unit.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src|C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/hazard_unit.sv|
+!s101 -O0
+vimmGen
+R1
+I8_b[1fhi;ciE<45<67UW01
+VfTVaXn8?@gW42<CP?dL<h0
+S1
+R2
+R3
+8C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/immGen.sv
+FC:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/immGen.sv
+L0 1
+R4
+r1
+31
+R5
+R6
+nimm@gen
+!i10b 1
+!s100 D`F;zWH2ikfQG[1Yf;fBX0
+!s105 immGen_sv_unit
+!s85 0
+!s108 1735532456.931000
+!s107 C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/immGen.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src|C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/immGen.sv|
+!s101 -O0
+vinmem
+R1
+I`4QaRZj3Y;aEK:YfRZRig1
+Vom<Thb3HaF4XaI@<eFFHH3
+S1
+R2
+R3
+8C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/inmem.v
+FC:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/inmem.v
+L0 39
+R4
+r1
+31
+R5
+R6
+!i10b 1
+!s100 UTg61<^ZoTK0;U0K;0KSV3
+!s105 inmem_v_unit
+!s85 0
+!s108 1735532456.044000
+!s107 C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/inmem.v|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src|C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/inmem.v|
+!s101 -O0
+vinstr_rom
+R1
+I6aeWmYef1P:9YRY^67S582
+VlzbF2zCb38bIQVVm1_F^f3
+S1
+R2
+w1735532103
+8C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/instr_rom.v
+FC:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/instr_rom.v
+L0 1
+R4
+r1
+31
+R5
+R6
+!i10b 1
+!s100 e[@01>BPnn7FZ=BmLKPdL2
+!s105 instr_rom_v_unit
+!s85 0
+!s108 1735532456.087000
+!s107 C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/instr_rom.v|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src|C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/instr_rom.v|
+!s101 -O0
+vlatch32_cp
+R1
+I8LT<hWJ]NSWJJhhkNP2XU2
+VH22Zf8e3Fo1Vei=nBij:C2
+R7
+S1
+R2
+R3
+R8
+R9
+L0 99
+R4
+r1
+31
+R10
+R11
+R12
+R5
+R6
+!i10b 1
+!s100 FC8IabBUBcRF6E]AObVIC1
+!s85 0
+!s101 -O0
+vld_mux
+R1
+IKfPhDFKF`>kRQ8ez080C?1
+VlR[nhIH[C2>Q:DfhNAXQo3
+R7
+S1
+R2
+R3
+R8
+R9
+L0 83
+R4
+r1
+31
+R10
+R11
+R12
+R5
+R6
+!i10b 1
+!s100 hPVdR0dNI_i]39NL:M3bR3
+!s85 0
+!s101 -O0
+vld_sel_mux
+R1
+IR8I6PHgQYX911X0O@k=o[0
+V4fO60eV;3aP@29on:_RVa2
+R7
+S1
+R2
+R3
+R8
+R9
+L0 136
+R4
+r1
+31
+R10
+R11
+R12
+R5
+R6
+!i10b 1
+!s100 XcnRaaPQ]`7Y=WE@MP2Pa1
+!s85 0
+!s101 -O0
+vlsu
+R1
+IU91lIeSIP98<X6:W<3LGG0
+VhKek<V^k]C^Y?F]BjFo=V0
+R7
+S1
+R2
+R3
+R8
+R9
+L0 1
+R4
+r1
+31
+R10
+R11
+R12
+R5
+R6
+!i10b 1
+!s100 lIHVo<5K7nE?bM_VBEJXn2
+!s85 0
+!s101 -O0
+vnon_restoring_div
+R1
+I<4_?18MmU;XjW:=SMDY5I0
+V4Z22OPYAm0`1I]h1z464Z1
+S1
+R2
+R3
+8C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/non_restoring_div.sv
+FC:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/non_restoring_div.sv
+L0 1
+R4
+r1
+31
+R5
+Z23 !s92 -sv -work work +incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored -O0
+!i10b 1
+!s100 E1Q>QjgD^P4m`=8P<N88J2
+!s105 non_restoring_div_sv_unit
+!s85 0
+!s108 1735532456.174000
+!s107 C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/non_restoring_div.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored|C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/non_restoring_div.sv|
+!s101 -O0
+vop_a_mux
+R1
+I;k23BG7T;6e=2CRPz2a]m3
+VPzUzz@g7SR_LGDAz:>dck2
+S1
+R2
+R3
+8C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/op_a_mux.sv
+FC:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/op_a_mux.sv
+L0 1
+R4
+r1
+31
+R5
+R6
+!i10b 1
+!s100 _DmzRH8I1dE3^3zNXQ7h31
+!s105 op_a_mux_sv_unit
+!s85 0
+!s108 1735532456.823000
+!s107 C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/op_a_mux.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src|C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/op_a_mux.sv|
+!s101 -O0
+vop_b_mux
+R1
+I;=;EAeAcdOlKCd]_EMcoj1
+Voa0oDjMW_FYI@?>HI4Fhl1
+S1
+R2
+R3
+8C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/op_b_mux.sv
+FC:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/op_b_mux.sv
+L0 1
+R4
+r1
+31
+R5
+R6
+!i10b 1
+!s100 J@z7V[S4TlQ00bM31KkI[1
+!s105 op_b_mux_sv_unit
+!s85 0
+!s108 1735532456.783000
+!s107 C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/op_b_mux.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src|C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/op_b_mux.sv|
+!s101 -O0
+voutmem
+R1
+Ih?_G=FmcT4L7LNlGA0Rg<3
+VbA6_LGz3BHJ2_=8@85P:R1
+S1
+R2
+R3
+8C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/outmem.v
+FC:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/outmem.v
+L0 39
+R4
+r1
+31
+R5
+R6
+!i10b 1
+!s100 KBz<EUfCTe6>MQF5h=DdG0
+!s105 outmem_v_unit
+!s85 0
+!s108 1735532456.000000
+!s107 C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/outmem.v|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src|C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/outmem.v|
+!s101 -O0
+vpc_reg
+R1
+I<EG^4M1_0>4nIjc2Mac871
+VjImd8^EY?R[W]h4ed:Pmj1
+S1
+R2
+R3
+8C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/pc_reg.sv
+FC:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/pc_reg.sv
+L0 1
+R4
+r1
+31
+R5
+R6
+!i10b 1
+!s100 7T@`=dmAM9<`CohhiS3I:0
+!s105 pc_reg_sv_unit
+!s85 0
+!s108 1735532456.743000
+!s107 C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/pc_reg.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src|C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/pc_reg.sv|
+!s101 -O0
+vpipeline
+R1
+I8_c7RfXB2ER:XjF=;1MPY1
+V:WI8VB1EIEN`L=YQINX@z3
+S1
+R2
+w1735532451
+8C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/pipeline.sv
+FC:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/pipeline.sv
+L0 1
+R4
+r1
+31
+R5
+R6
+!i10b 1
+!s100 hboH1JUQCS>jcmnaHcQSA2
+!s105 pipeline_sv_unit
+!s85 0
+!s108 1735532456.618000
+!s107 C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/pipeline.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src|C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/pipeline.sv|
+!s101 -O0
+vreg32_cp
+R1
+Iff4d@o1H:<TkXZAFJ[?;k2
+Vd:E`lcRZl@h<@PQUg7VnR2
+R7
+S1
+R2
+R3
+R8
+R9
+L0 113
+R4
+r1
+31
+R10
+R11
+R12
+R5
+R6
+!i10b 1
+!s100 b_40H2X5P:ZXBT3ni:RR90
+!s85 0
+!s101 -O0
+vreg_dec
+R1
+I@7:k8>Qo[WVT1Y8m>aKL_1
+VaG=mA4TYLCTJKP_YPGH2`3
+S1
+R2
+R3
+8C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/reg_dec.sv
+FC:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/reg_dec.sv
+L0 1
+R4
+r1
+31
+R5
+R6
+!i10b 1
+!s100 I<6_YABBhH`XUGEH]cWAC3
+!s105 reg_dec_sv_unit
+!s85 0
+!s108 1735532456.703000
+!s107 C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/reg_dec.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src|C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/reg_dec.sv|
+!s101 -O0
+vreg_decode_execute
+R1
+I8g?OSXY@k[SSK48>RRSQa0
+V?cY<ZEYB]NNZi7R2jPQ3J2
+S1
+R2
+R3
+8C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/reg_decode_execute.sv
+FC:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/reg_decode_execute.sv
+L0 1
+R4
+r1
+31
+R5
+R6
+!i10b 1
+!s100 V4hQ_UQM^PHm:@U0JzK`D0
+!s105 reg_decode_execute_sv_unit
+!s85 0
+!s108 1735532456.254000
+!s107 C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/reg_decode_execute.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src|C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/reg_decode_execute.sv|
+!s101 -O0
+vreg_execute_memory
+R1
+IS5dIM=:Fb@o4e]]VR_5<f0
+VH^AJA`?hK>@b0B6MQbg9>2
+S1
+R2
+R3
+8C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/reg_execute_memory.sv
+FC:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/reg_execute_memory.sv
+L0 1
+R4
+r1
+31
+R5
+R6
+!i10b 1
+!s100 GfDg1LHnS^8C^ceC@nF?O2
+!s105 reg_execute_memory_sv_unit
+!s85 0
+!s108 1735532456.295000
+!s107 C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/reg_execute_memory.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src|C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/reg_execute_memory.sv|
+!s101 -O0
+vreg_fetch_decode
+R1
+IS8OY0Xf6:PHa4XN3;IKjm2
+VTRjmNThCh_IV@eYPCVLEd2
+S1
+R2
+R3
+8C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/reg_fetch_decode.sv
+FC:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/reg_fetch_decode.sv
+L0 1
+R4
+r1
+31
+R5
+R6
+!i10b 1
+!s100 c1@dhP=m>8;5<lm70]][H2
+!s105 reg_fetch_decode_sv_unit
+!s85 0
+!s108 1735532456.215000
+!s107 C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/reg_fetch_decode.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src|C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/reg_fetch_decode.sv|
+!s101 -O0
+vreg_memory_writeback
+R1
+IZSojZ_M8iB]6zd[[NQnPe2
+VF0?4^^HUFfRb5P2cB3]X;1
+S1
+R2
+R3
+8C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/reg_memory_writeback.sv
+FC:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/reg_memory_writeback.sv
+L0 1
+R4
+r1
+31
+R5
+R6
+!i10b 1
+!s100 I8?jojY722<VL@hSSf2M_1
+!s105 reg_memory_writeback_sv_unit
+!s85 0
+!s108 1735532456.339000
+!s107 C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/reg_memory_writeback.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src|C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/reg_memory_writeback.sv|
+!s101 -O0
+vregfile
+R1
+I2:ZONF@oP4fL:`lV0P6MF2
+VI3Wf]cmU9P0al^9D<N6Lg2
+S1
+R2
+R3
+8C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/regfile.sv
+FC:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/regfile.sv
+L0 1
+R4
+r1
+31
+R5
+R6
+!i10b 1
+!s100 8DSZ4T=DHCM<FLAYofDR53
+!s105 regfile_sv_unit
+!s85 0
+!s108 1735532456.662000
+!s107 C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/regfile.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src|C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/regfile.sv|
+!s101 -O0
+vrs1d_mux
+R1
+I4Sh8Ri7Q<gDO06lo;OiiN3
+V0dcBAAYOA]lBSbWa8KOJM1
+S1
+R2
+R3
+8C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/rs1d_mux.sv
+FC:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/rs1d_mux.sv
+L0 1
+R4
+r1
+31
+R5
+R6
+!i10b 1
+!s100 8z6Q;jk]^N];@b];d2J[S3
+!s105 rs1d_mux_sv_unit
+!s85 0
+!s108 1735532456.458000
+!s107 C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/rs1d_mux.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src|C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/rs1d_mux.sv|
+!s101 -O0
+vrs2d_mux
+R1
+IiMGMMBC[mlTccd^@Hd_:i3
+VJ``ME?<PV7>z^9ka990EY0
+S1
+R2
+R3
+8C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/rs2d_mux.sv
+FC:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/rs2d_mux.sv
+L0 1
+R4
+r1
+31
+R5
+R6
+!i10b 1
+!s100 2<TXZfG50V<]MXNKQ2l=N0
+!s105 rs2d_mux_sv_unit
+!s85 0
+!s108 1735532456.497000
+!s107 C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/rs2d_mux.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src|C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/rs2d_mux.sv|
+!s101 -O0
+vscoreboard
+R1
+Icd`>15b4@]JBc5HG5CAjD1
+VCmC<:ClI8[S5O<z6^PJ]`3
+S1
+R2
+w1735532157
+8C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/../../../../../../Desktop/singlecycle-test/01_bench/scoreboard.sv
+FC:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/../../../../../../Desktop/singlecycle-test/01_bench/scoreboard.sv
+L0 1
+R4
+r1
+31
+R5
+R21
+!i10b 1
+!s100 Q_AV0I@_fV=X7Bh^BOWG<2
+!s105 scoreboard_sv_unit
+!s85 0
+!s108 1735532457.812000
+!s107 C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/../../../../../../Desktop/singlecycle-test/01_bench/scoreboard.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/../../../../../../Desktop/singlecycle-test/01_bench|C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/../../../../../../Desktop/singlecycle-test/01_bench/scoreboard.sv|
+!s101 -O0
+vsigned_non_restoring_div
+R1
+I?Y2M`g^f3oLIj<GkIP0mF1
+VCZ@WJga_QcdMn8:E_VWnZ2
+S1
+R2
+R3
+8C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/signed_non_restoring_div.sv
+FC:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/signed_non_restoring_div.sv
+L0 1
+R4
+r1
+31
+R5
+R23
+!i10b 1
+!s100 n]Y:2JFYB:OAoNo:?fz@J1
+!s105 signed_non_restoring_div_sv_unit
+!s85 0
+!s108 1735532456.133000
+!s107 C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/signed_non_restoring_div.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored|C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/signed_non_restoring_div.sv|
+!s101 -O0
+vsigned_vedic_mult_32bit
+R1
+I7HN6FEE;:V;bcBKh]Z2dh2
+VKJJ^g;;0@S2>7]5Ck7K[92
+S1
+R2
+w1735293247
+8C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main/signed_vedic_mult_32bit.v
+FC:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main/signed_vedic_mult_32bit.v
+L0 23
+R4
+r1
+31
+R5
+R20
+!i10b 1
+!s100 EnEkHW8k0i_aFDfH@9T`40
+!s105 signed_vedic_mult_32bit_v_unit
+!s85 0
+!s108 1735532457.450000
+!s107 C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main/signed_vedic_mult_32bit.v|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main|C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main/signed_vedic_mult_32bit.v|
+!s101 -O0
+vtbench
+R1
+IahN3n^Q<E`[YJSj>827O@2
+VT=^BAA_AzzEXP@nS83[Le2
+S1
+R2
+w1735531979
+8C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/../../../../../../Desktop/singlecycle-test/01_bench/tbench.sv
+FC:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/../../../../../../Desktop/singlecycle-test/01_bench/tbench.sv
+L0 4
+R4
+r1
+31
+R5
+R21
+!i10b 1
+!s100 C^GT[D>FC^E9H?mzQAkHG1
+!s105 tbench_sv_unit
+!s85 0
+!s108 1735532457.763000
+!s107 C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/../../../../../../Desktop/singlecycle-test/01_bench/tbench.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/../../../../../../Desktop/singlecycle-test/01_bench|C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/../../../../../../Desktop/singlecycle-test/01_bench/tbench.sv|
+!s101 -O0
+vtwos_comp_32bit
+R1
+IDTeAGX2i^R<I?PbBzldHN2
+VVJa1NTDIlP<@UW?cik]Zl3
+S1
+R2
+R22
+8C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main/2sComp.v
+FC:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main/2sComp.v
+L0 23
+R4
+r1
+31
+R5
+R20
+!i10b 1
+!s100 64e@H_^7V@@;A1=4]zfLW1
+!s105 _2sComp_v_unit
+!s85 0
+!s108 1735532457.716000
+!s107 C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main/2sComp.v|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main|C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main/2sComp.v|
+!s101 -O0
+vtwos_comp_64bit
+R1
+I`77HUY;<I1P0WCak@zi@e1
+Vh`n2LfclMN6W2fm=@LUlQ2
+S1
+R2
+R22
+8C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main/twos_comp_64bit.v
+FC:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main/twos_comp_64bit.v
+L0 23
+R4
+r1
+31
+R5
+R20
+!i10b 1
+!s100 Ggn6QNd_TT6og:mgZlA:B0
+!s105 twos_comp_64bit_v_unit
+!s85 0
+!s108 1735532457.405000
+!s107 C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main/twos_comp_64bit.v|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main|C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main/twos_comp_64bit.v|
+!s101 -O0
+vvedic_mult_16bit
+R1
+IdHES1P@LaLl1b:PDh4IHb1
+VH[ORfe>5m^m>M3MnTYN?C2
+S1
+R2
+w1735293167
+8C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main/vedic_mult_16bit.v
+FC:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main/vedic_mult_16bit.v
+L0 23
+R4
+r1
+31
+R5
+R20
+!i10b 1
+!s100 V;6jcRCeMJ^:3OcP<E<>_0
+!s105 vedic_mult_16bit_v_unit
+!s85 0
+!s108 1735532457.232000
+!s107 C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main/vedic_mult_16bit.v|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main|C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main/vedic_mult_16bit.v|
+!s101 -O0
+vvedic_mult_2bit
+R1
+IIP=[0_ALPh14GbVc@iN:72
+V8f>ifbOTO<U_mh9bIWnI31
+S1
+R2
+Z24 w1735293248
+8C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main/vedic_mult_2bit.v
+FC:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main/vedic_mult_2bit.v
+L0 23
+R4
+r1
+31
+R5
+R20
+!i10b 1
+!s100 I9hHaAaYnZMT1GmnMk?jo3
+!s105 vedic_mult_2bit_v_unit
+!s85 0
+!s108 1735532457.362000
+!s107 C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main/vedic_mult_2bit.v|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main|C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main/vedic_mult_2bit.v|
+!s101 -O0
+vvedic_mult_32bit
+R1
+IfK<Tgk;kdWd_ol71IHMVD3
+VHjE9X@CR`V5hQED[BZZUL0
+S1
+R2
+w1735293009
+8C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main/vedic_mult_32bit.v
+FC:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main/vedic_mult_32bit.v
+L0 23
+R4
+r1
+31
+R5
+R20
+!i10b 1
+!s100 k@N51UTHQVTh3b=cD;Udh2
+!s105 vedic_mult_32bit_v_unit
+!s85 0
+!s108 1735532457.189000
+!s107 C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main/vedic_mult_32bit.v|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main|C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main/vedic_mult_32bit.v|
+!s101 -O0
+vvedic_mult_4bit
+R1
+IQPGLA2KL5a`]<=3`oK<M43
+V5d_UaQ^?90:o@WBT8:I732
+S1
+R2
+R24
+8C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main/vedic_mult_4bit.v
+FC:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main/vedic_mult_4bit.v
+L0 23
+R4
+r1
+31
+R5
+R20
+!i10b 1
+!s100 H01Yc=OZSBYIS@Z5EJX=Q0
+!s105 vedic_mult_4bit_v_unit
+!s85 0
+!s108 1735532457.320000
+!s107 C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main/vedic_mult_4bit.v|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main|C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main/vedic_mult_4bit.v|
+!s101 -O0
+vvedic_mult_8bit
+R1
+Ii3`9Z]Nl`a0Z5mH>FogCK1
+VMZVL7GCzAJT`Te<_KL@;]2
+S1
+R2
+w1735293184
+8C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main/vedic_mult_8bit.v
+FC:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main/vedic_mult_8bit.v
+L0 23
+R4
+r1
+31
+R5
+R20
+!i10b 1
+!s100 ?=J_ljS=Oj3HkH8@JZoC31
+!s105 vedic_mult_8bit_v_unit
+!s85 0
+!s108 1735532457.276000
+!s107 C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main/vedic_mult_8bit.v|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main|C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/32-bit-Signed-Vedic-Multiplier-main/32-bit-Signed-Vedic-Multiplier-main/vedic_mult_8bit.v|
+!s101 -O0
+vwb_mux
+R1
+IfV_GQdG3l_Aa<mAg1c1YG2
+VfU8Z>MLicT^S765<k7?^k1
+S1
+R2
+R3
+8C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/wb_mux.sv
+FC:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/wb_mux.sv
+L0 1
+R4
+r1
+31
+R5
+R6
+!i10b 1
+!s100 HaO764T9??e9;9FKbh8BS3
+!s105 wb_mux_sv_unit
+!s85 0
+!s108 1735532456.575000
+!s107 C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/wb_mux.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src|C:/Users/Admin/Downloads/Compressed/pipeline-main/pipeline-main/quartus/pipeline_restored/src/wb_mux.sv|
+!s101 -O0
